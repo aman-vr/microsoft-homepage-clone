@@ -11,64 +11,69 @@
 </head>
 
 <body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#"><img src="/img/logo.png" alt="Microsoft Logo"></a>
+        </div>
+        <div class="nav-left-menu">
+            <ul class="nav-left-menu-ul">
+                <li class="hover-underline"><a href="#"> Microsoft 365 </a></li>
+                <li class="hover-underline"><a href="#"> Teams </a></li>
+                <li class="hover-underline"><a href="#"> Windows </a></li>
+                <li class="hover-underline"><a href="#"> Surface </a></li>
+                <li class="hover-underline"><a href="#"> Xbox </a></li>
+                <li class="hover-underline"><a href="#"> Support </a></li>
+            </ul>
+        </div>
+        <div class="nav-right-menu">
+            <ul>
+                <li class="hover-underline">
+                    <a href="#">
+                        <span> All Microsoft </span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="hover-underline">
+                    <a href="#">
+                        <span> Search </span>
+                        <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                    </a>
+                </li>
+                <li class="hover-underline">
+                    <a href="#">
+                        <span> Cart </span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li class="sign-in-circle">
+                    <a href="#">
+                        <span> Sign in </span>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-image">
+            <h2> Maximise the everyday with Microsoft 365 </h2>
+            <p> Get online protection, secure cloud storage and innovative apps designed to fit your needs - all in
+                one
+                plan.</p>
+            <div class="hero-btn">
+                <a href="#" class="a-btn"> For one person </a>
+                <a href="#" class="hero-a"> For up to six people <i class="fa-solid fa-angle-right"></i> </a>
+            </div>
+        </div>
+    </header>
+
+
     <div class="main">
-        <nav>
-            <div class="nav-logo">
-                <img src="/img/logo.png" alt="Microsoft Logo">
-            </div>
-            <div class="nav-left-menu">
-                <ul>
-                    <li><a href="#"> Microsoft 365 </a></li>
-                    <li><a href="#"> Teams </a></li>
-                    <li><a href="#"> Windows </a></li>
-                    <li><a href="#"> Surface </a></li>
-                    <li><a href="#"> Xbox </a></li>
-                    <li><a href="#"> Support </a></li>
-                </ul>
-            </div>
-            <div class="nav-right-menu">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span> All Microsoft </span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span> Search </span>
-                            <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span> Cart </span>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span> Sign in </span>
-                            <i class="fa-solid fa-user-plus"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <header>
-            <div class="hero-image">
-                <h2> Maximise the everyday with Microsoft 365 </h2>
-                <p> Get online protection, secure cloud storage and innovative apps designed to fit your needs - all in
-                    one
-                    plan.</p>
-                <div class="hero-btn">
-                    <a href="#" class="a-btn"> For one person </a>
-                    <a href="#" class="hero-a"> For up to six people <i class="fa-solid fa-angle-right"></i> </a>
-                </div>
-            </div>
-        </header>
-
         <div class="cards-container">
             <div class="card">
                 <img src="/img/card1.png" alt="Card 1">
@@ -241,6 +246,13 @@
             </ul>
         </div>
     </footer>
+
+    <!-- JAVASCRIPT CODE TO TOGGLE MENU  -->
+    <script>
+        document.querySelector('.menu-btn').addEventListener
+            ('click', () => document.querySelector('.nav-left-menu-ul')
+                .classList.toggle('show'));
+    </script>
 </body>
 
 </html>
