@@ -6,6 +6,9 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
   width: 90%;
   margin: 0 auto;
 }
@@ -47,7 +50,7 @@ nav ul {
 }
 
 .nav-right-menu {
-  width: 40%;
+  width: 50%;
 }
 
 .nav-left-menu {
@@ -61,7 +64,7 @@ nav ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
-  width: 99%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -132,20 +135,113 @@ nav ul {
 
 /* XBOX SECTION  */
 
-section {
+.xbox-section {
   background-image: url(/img/xbox.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px;
-  width: 99%;
-  margin: auto;
+  height: 350px;
+  width: 100%;
+  margin: 30px auto;
 }
 
-.content {
+.xbox-container {
+  width: 35%;
+  padding: 50px 0 0 50px;
+}
+
+.xbox-container p {
+  margin: 10px 0 25px;
+}
+
+/* CARBON SECTION  */
+
+.carbon-section {
+  background-image: url(/img/carbon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  margin: 30px auto;
+  color: white;
+}
+
+.carbon-container {
   width: 40%;
-  padding: 50px 0 0 30px;
+  padding: 100px 0 0 40px;
 }
 
-.content p {
-  margin: 10px 0 20px;
+.carbon-container p {
+  margin: 10px 0 30px;
+  font-weight: 600;
+}
+
+.carbon-container .a-btn {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Follow Section  */
+
+.follow-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 30px 0px 30px 10px;
+}
+
+/* Footer Section  */
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 30px;
+  font-size: 0.75rem;
+  color: #616161;
+}
+
+.footer-links {
+  width: 90%;
+  margin: 0 auto 0 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 50px;
+}
+
+.footer-links li {
+  font-weight: 300;
+  line-height: 2.8;
+}
+
+.footer-links li h4 {
+  font-weight: 600;
+}
+
+.footer-bottom {
+  width: 95%;
+  margin: 0 auto 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-bottom-left i {
+  font-size: 0.85rem;
+  margin-right: 5px;
+}
+.footer-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom li {
+  font-weight: 300;
+  line-height: 1;
 }
